@@ -1,0 +1,258 @@
+.team-page{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    .team-side{
+        width:300px;
+        .team-side-content{
+            height: 100%;
+            .team-side-header{
+                height: 55px;
+                line-height: 55px;
+                display: flex;
+                flex-direction: row;
+                .handle-title{
+                    flex: 1;
+                    padding-left: 10px;
+                }
+                .handle-btn{
+                    display: inline-block;
+                    height: 55px;
+                    padding:0 10px 0 35px;
+                    color:#409eff;
+                    font-size: 14px;
+                    background: url(../common/img/icon-add.png) left center no-repeat;
+                    background-size: 32px;
+                    cursor: pointer;
+                }
+            }
+            .side-content{
+                height: calc(~"50% -"55px);
+                .team-list{
+                    height: auto;
+                    overflow: hidden;
+                    min-height: 100%;
+                    .team-item{
+                        height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        padding:5px 10px;
+                        cursor: pointer;
+                        .team-icon{
+                            display: inline-block;
+                            width: 48px;
+                            height: 48px;
+                            border:1px solid #e0e6ed;
+                            border-radius: 100%;
+                            overflow: hidden;
+                            background: url(../common/img/icon-smile.png) no-repeat center center;
+                        }
+                        .item-info{
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            padding: 5px 10px;
+                            p{
+                                flex: 1;
+                                margin: 0;
+                                font-size:14px; 
+                                line-height: 20px;
+                            }
+                            .team-couent{
+                                font-size: 12px;
+                                color: #99a9bf;
+                            }
+                        }
+                    }
+                    .team-item:hover,
+                    .team-item.active{
+                        background: rgba(255,150,79,.08);
+                    }
+                    .team-item.active{
+                        border-left:4px solid #ff964f;
+                    }
+                }
+                .empty-team-list{
+                    background: url(../common/img/icon-empty-team.png) no-repeat center center;
+                }
+                // .toucher-search{
+                //     height: 30px;
+                //     padding:0 20px 10px;
+                // }
+                // <div className="toucher-search">
+                //         <Input
+                //             icon="search"
+                //             size="small"
+                //             placeholder="联系人姓名、电话、专业标签关键词"/>
+                //         </div>
+                .toucher-list{
+                    height: auto;
+                    overflow: hidden;
+                    padding:0 5px;
+                    min-height: 100%;
+                    .touch-item{
+                        height: 50px;
+                        line-height: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        border-bottom: 1px solid #bfcbd9;
+                        font-size: 14px;
+                        .touch-icon{
+                            display: inline-block;
+                            width: 50px;
+                            overflow: hidden;
+                            background: url(../common/img/icon-touch.png) no-repeat center center;
+                        }
+                        .touch-name{
+                            flex:1;
+                            padding-left: 10px;
+                            color: #409eff;
+                        }
+                        .touch-mobile{
+                            display: inline-block;
+                            width: 110px;
+                            color: #bfcbd9;
+                        }
+                    }
+                }
+                .empty-toucher-list{
+                    background: url(../common/img/icon-empty-toucher.png) no-repeat center center;
+                }
+            }
+        }
+    }
+    .team-wraper{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .top-bar-content{
+            display: flex;
+            flex-direction: row;
+            justify-content:center;
+        }
+    }
+    .panel{
+        margin:10px 25px;
+        background: #fff;
+        .panel-header{
+            position: relative;
+            height: 55px;
+            .panel-title{
+                position: absolute;
+                display: inline-block;
+                height: 35px;
+                line-height: 35px;
+                color: #fff;
+                border-radius: 20px;
+                text-align: center;
+                left: -15px;
+                top:10px;
+                width: 95px;
+                background-image: linear-gradient(-90deg,#ffd463,#ff995f);
+                box-shadow: 0 2px 4px rgba(255,153,95,.4);
+            }
+            .panel-handle{
+                display: inline-block;
+                float: right;
+                height: 55px;
+                padding-right:15px;
+                span{
+                    display: inline-block;
+                    height: 55px;
+                    line-height: 56px;
+                    padding-left: 20px;
+                    font-size: 12px;
+                    color: #ff964f;
+                }
+                .icon-edit{
+                    background: url(../common/img/icon-edit.png) no-repeat left center;
+                    background-size: 16px;
+                    cursor: pointer;
+                }
+                .icon-skip{
+                    background: url(../common/img/icon-skip.png) no-repeat left center;
+                    background-size: 16px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.base-setting-content{
+    padding:20px;
+    height:auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    .base-setting-wraper{
+        flex: 1;
+    }
+    .right-wraper{
+        width:104px;
+        .updatehead{
+            width: 100%;
+            .logo-box{
+                position: relative;
+                display: flex;
+                cursor: pointer;
+                .default-large-img{
+                    display: flex;
+                    background: #f9fafc;
+                    border: 2px solid #e8eaf2;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 60px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                }
+            }
+            .logo-tips-flex{
+                overflow: hidden;
+                padding-top: 9px;
+                .icon{
+                    width: 7px;
+                    height: 7px;
+                    float: left;
+                    margin-top: 7px;
+                    background: #99a9bf;
+                    border-radius: 50%;
+                }
+                .tips{
+                    font-size: 12px;
+                    color: #99a9bf;
+                    padding-left: 13px;
+                    line-height: 21px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .base-setting-item{
+        display: flex;
+        flex-direction: row;
+        font-size: 14px;
+        padding:10px 0;
+        span{
+            width: 100px;
+            color: #99a9bf;
+        }
+        p{
+            margin:0;
+            flex: 1;
+        }
+        .tips{
+            font-size: 12px;
+            color: #99a9bf;
+            line-height: 21px;
+            margin: 0;
+        }
+    }
+}
+
+.member-setting-content{
+    padding:20px;
+    height:auto;
+    overflow: hidden;
+}

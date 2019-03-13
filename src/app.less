@@ -1,0 +1,306 @@
+.main-page{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    .side-bar{
+        display: flex;
+        flex-direction: column;
+        width: 74px;
+        border-right: 1px solid #d3dce6;
+        .logo{
+            padding:10px;
+            text-align: center;
+        }
+        .side-content{
+            flex: 1;
+            text-align: center;
+            .nav-item{
+                padding:5px;
+                a{
+                    display: block;
+                    padding: 7px 0;
+                    text-decoration: none;
+                    color: #fff;
+                    border-radius: 6px;
+                    span{
+                        display: block;
+                        height: 24px;
+                        line-height: 24px;
+                        text-indent: -2000rem;
+                    }
+                }
+                a.team{
+                    background-image: url(./components/common/img/icon-team.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.time{
+                    background-image: url(./components/common/img/icon-calendar.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.case{
+                    background-image: url(./components/common/img/icon-case.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.matter{
+                    background-image: url(./components/common/img/icon-matter.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.knowledge{
+                    background-image: url(./components/common/img/icon-knowledge.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.tools{
+                    background-image: url(./components/common/img/icon-tools.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.customer{
+                    background-image: url(./components/common/img/icon-customer.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 28px;
+                }
+                a.active span{
+                    text-indent: 0;
+                }
+                a.team.active{
+                    background-image: linear-gradient(-90deg,#ffd463,#ff995f);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(255,153,95,.4);
+                }
+                a.time.active{
+                    background-image: linear-gradient(-90deg,#fe89b1,#ff6b78);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(255,107,120,.4);
+                }
+                a.case.active{
+                    background-image: linear-gradient(-90deg,#4ddbf8,#50befb);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(80,190,251,.4);
+                }
+                a.matter.active{
+                    background-image: linear-gradient(90deg,#02c8bf,#67e7a8);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(103,231,168,.4);
+                }
+                a.knowledge.active{
+                    background-image: linear-gradient(-90deg,#96bbfa,#a27fff);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(162,127,255,.4);
+                }
+                a.tools.active{
+                    background-image: linear-gradient(90deg,#4e7dff,#8b8dff);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(139,141,255,.4);
+                }
+                a.customer.active{
+                    background-image: linear-gradient(90deg,#59e499,#0ad17e);
+                    background-repeat:repeat;
+                    background-size:cover;
+                    box-shadow: 0 2px 4px rgba(139,141,255,.4);
+                }
+            }
+        }
+    }
+    .main-content{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .page{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            .page-top-bar{
+                height: 55px;
+                display: flex;
+                flex-direction: row;
+                .title{
+                    height: 55px;
+                    width: 80px; 
+                    padding-left:10px;
+                    .top-icon-title{
+                        display: inline-block;
+                        height: 55px;
+                        line-height: 55px;
+                        padding-left: 30px;
+                        color: #fff;
+                    }
+                    .top-icon-team{
+                        background-image: url(./components/common/img/icon-whilte-team.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-time{
+                        background-image: url(./components/common/img/icon-whilte-calendar.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-case{
+                        background-image: url(./components/common/img/icon-whilte-case.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-matter{
+                        background-image: url(./components/common/img/icon-whilte-matter.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-knowledge{
+                        background-image: url(./components/common/img/icon-whilte-knowledge.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-tools{
+                        background-image: url(./components/common/img/icon-whilte-tools.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                    .top-icon-customer{
+                        background-image: url(./components/common/img/icon-whilte-customer.png);
+                        background-repeat: no-repeat;
+                        background-position: left center;
+                        background-size: 20px;
+                    }
+                }
+                .notice{
+                    height: 55px;
+                    width: 50px;
+                    .top-icon-notice{
+                        display: inline-block;
+                        height: 55px;
+                        width: 50px;
+                        background-image: linear-gradient(90deg,#4e7dff,#8b8dff);
+                        background-image: url(./components/common/img/icon-notice.png);
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 20px;
+                        cursor: pointer;
+                    }
+                }
+                .top-bar-content{
+                    flex: 1;
+                    .top-tab{
+                        height:45px;
+                        line-height: 45px;
+                        margin-top:10px;
+                        width: 100px;
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 14px;
+                        border-top-left-radius: 8px;
+                        border-top-right-radius: 8px;
+                        text-align: center;
+                    }
+                    .top-tab-active{
+                        color:#50bfff;
+                        background: #f7f7f7;
+                    }
+                }
+            }
+            .team-top-bar{
+                background-image: linear-gradient(-90deg,#ffd463,#ff995f);
+                box-shadow: 0 2px 4px rgba(255,153,95,.4);
+            }
+            .team-top-bar{
+                background-image: linear-gradient(-90deg,#ffd463,#ff995f);
+                box-shadow: 0 2px 4px rgba(255,153,95,.4);
+            }
+            .time-top-bar{
+                background-image: linear-gradient(-90deg,#fe89b1,#ff6b78);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(255,107,120,.4);
+            }
+            .case-top-bar{
+                background-image: linear-gradient(-90deg,#4ddbf8,#50befb);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(80,190,251,.4);
+            }
+            .matter-top-bar{
+                background-image: linear-gradient(90deg,#02c8bf,#67e7a8);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(103,231,168,.4);
+            }
+            .knowledge-top-bar{
+                background-image: linear-gradient(-90deg,#96bbfa,#a27fff);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(162,127,255,.4);
+            }
+            .tools-top-bar{
+                background-image: linear-gradient(90deg,#4e7dff,#8b8dff);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(139,141,255,.4);
+            }
+            .customer-top-bar{
+                background-image: linear-gradient(90deg,#59e499,#0ad17e);
+                background-repeat:repeat;
+                background-size:cover;
+                box-shadow: 0 2px 4px rgba(139,141,255,.4);
+            }
+            .page-content{
+                flex: 1;
+                background: #fcf8f8;
+            }
+        }
+    }
+}
+/* scroll */
+.scroll-vertical-track {
+    background-color: transparent;
+    width: 8px;
+    transition: opacity 0.3s;
+}
+.scroll-horizontal-track {
+    background-color: transparent;
+    height: 8px;
+    transition: opacity 0.3s;
+}
+
+.scroll-vertical-handler {
+    width: 6px;
+    right: 1px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+.scroll-horizontal-handler {
+    height: 6px;
+    bottom: 1px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
